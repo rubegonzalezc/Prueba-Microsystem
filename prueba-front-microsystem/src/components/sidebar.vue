@@ -7,6 +7,7 @@
     class="sidebar-container"
     theme="light"
     width="280"
+    height="100vh" 
   >
     <!-- Cabecera con logo -->
     <div class="sidebar-header pt-4 pb-2 px-4">
@@ -179,11 +180,29 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Estilos generales del sidebar */
+/* Estilos generales del sidebar con altura fija */
 .sidebar-container {
   background: linear-gradient(to bottom, #ffffff, #f8f9fa);
   border-right: 1px solid rgba(0,0,0,0.05);
   min-width: 280px; /* Ancho mínimo para evitar contenido cortado */
+  height: 100vh !important; /* Forzar altura completa */
+  position: fixed !important; /* Fijar posición */
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Permitir scroll dentro del sidebar si es necesario */
+  z-index: 100; /* Asegurar que esté por encima del contenido */
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+/* Para ajustar el contenido principal y que no quede debajo del sidebar */
+:deep(.v-main) {
+  padding-left: 280px !important; /* Debe ser igual al ancho del sidebar */
+}
+
+/* Cuando el sidebar está en modo minimizado (rail) */
+:deep(.v-navigation-drawer--rail + .v-main) {
+  padding-left: 56px !important; /* Ancho del sidebar minimizado */
 }
 
 /* Estilos para el logo */

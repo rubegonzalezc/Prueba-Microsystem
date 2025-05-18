@@ -260,26 +260,7 @@
                   </template>
                 </v-list-item>
 
-                <v-divider class="mx-4"></v-divider>
-                
-                <v-list-item 
-                  link
-                  to="/historial"
-                  color="primary"
-                  class="quick-link-item"
-                >
-                  <template v-slot:prepend>
-                    <v-avatar color="primary-lighten-5" size="42">
-                      <v-icon color="primary">mdi-history</v-icon>
-                    </v-avatar>
-                  </template>
-                  <v-list-item-title class="font-weight-medium">Historial de Descargas</v-list-item-title>
-                  <v-list-item-subtitle>Registro de documentos descargados</v-list-item-subtitle>
-                  
-                  <template v-slot:append>
-                    <v-icon color="primary">mdi-chevron-right</v-icon>
-                  </template>
-                </v-list-item>
+              
               </v-list>
             </v-card-text>
           </v-card>

@@ -16,7 +16,7 @@
             <div>
               <h2 class="text-h6">Listado de Recibos</h2>
               <span class="text-caption text-medium-emphasis">
-                Consulta y descarga tus recibos de pago
+                Consulta tus recibos de pago
               </span>
             </div>
           </div>
@@ -30,14 +30,15 @@
               prepend-inner-icon="mdi-magnify"
               label="Buscar recibo"
               hide-details
-              density="compact"
+              density="comfortable"
               variant="outlined"
               bg-color="grey-lighten-4"
-              class="search-field me-2"
-              style="max-width: 280px"
+              class="search-field me-3"
+              style="min-width: 240px;"
               placeholder="Nº recibo, período..."
               clearable
               @click:clear="search = ''"
+              color="primary"
             ></v-text-field>
             
             <v-menu>
@@ -193,22 +194,6 @@
                 </v-btn>
               </template>
             </v-tooltip>
-            
-            <v-tooltip text="Descargar PDF">
-              <template v-slot:activator="{ props }">
-                <v-btn
-                  icon
-                  variant="flat"
-                  color="grey-darken-1"
-                  v-bind="props"
-                  size="small"
-                  class="ms-2"
-                  @click="descargarRecibo(item)"
-                >
-                  <v-icon>mdi-download</v-icon>
-                </v-btn>
-              </template>
-            </v-tooltip>
           </div>
         </template>
 
@@ -327,12 +312,6 @@ function verRecibo(item) {
   router.push(`/pagos/${item.id}`);
 }
 
-function descargarRecibo(item) {
-  // Implementar funcionalidad de descarga
-  console.log('Descargando recibo:', item);
-  // Aquí iría la lógica para descargar el PDF
-}
-
 // Formateadores
 const formatearFecha = recibosPagoService.formatearFecha;
 const formatearMoneda = recibosPagoService.formatearMoneda;
@@ -373,16 +352,52 @@ onMounted(async () => {
   background-color: white;
 }
 
+/* Estilos mejorados para el campo de búsqueda */
 .search-field {
   transition: all 0.3s ease;
+  margin-bottom: 8px;
 }
 
 .search-field:focus-within {
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
 }
 
 .search-field :deep(.v-field) {
-  border-radius: 8px;
+  border-radius: 8px !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+.search-field :deep(.v-field__input) {
+  padding: 8px 5px !important;
+  font-size: 0.95rem !important;
+}
+
+.search-field :deep(.v-field__append-inner) {
+  padding-top: 8px !important;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  .toolbar-right {
+    flex-direction: column;
+    align-items: stretch !important;
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  .search-field {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-right: 0 !important;
+  }
+  
+  .filter-btn-wrapper {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 :deep(.v-data-table) {
