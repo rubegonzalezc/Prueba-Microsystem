@@ -19,17 +19,6 @@
           </span>
         </div>
       </div>
-      <v-spacer></v-spacer>
-      <v-btn
-        v-if="recibo"
-        color="primary"
-        variant="tonal"
-        class="action-btn"
-        prepend-icon="mdi-download"
-        @click="descargarRecibo(recibo)"
-      >
-        Descargar PDF
-      </v-btn>
     </div>
 
     <!-- Estado de carga -->

@@ -62,8 +62,23 @@ POST /api/auth/login - Autenticación
 GET /api/recibos - Lista de recibos
 GET /api/recibos/:id - Detalle de un recibo
 
+1. **Iniciar proyecto**
+Se debe instalar las dependencias
+```bash
+npm run i
+```
 
-Desarrollado con ❤️ para MicroeDoc
+2. **Iniciar base de datos**
+Antes de iniciar el servidor de pruebas se debe realizar el siguiente comando para iniciar la creación de usuarios en base de datos SQLite
+```bash
+npm run importar
+```
+
+3. **Iniciar servidor de pruebas**
+Se inicia con el comando
+```bash
+npm run dev
+```
 
 # Manual de Usuario
 
@@ -80,3 +95,26 @@ Una vez autenticado, accederá al Dashboard principal que muestra:
 * Últimos recibos
 * Accesos rápidos
 
+<img alt="Pantalla de dashboard" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/dashboard.PNG?raw=true">
+
+3. Consulta de recibos de pago
+Para consultar sus recibos de pago:
+* Haga click en "Recibos de pagos" en el menú lateral.
+* Se mostrará una tabla con todos sus recibos, ordenados del más reciente al más antiguo.
+* La tabla incluye información básica: Número de recibo, fecha de pago, período, monto líquido.
+
+<img alt="Pantalla de dashboard" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/dashboard.PNG?raw=true">
+
+
+4. Visualizaciíon de detalles
+Para ver el detalle completo de un recibo:
+* En la lista de recibos, haga click en el icono de "ojo" en la columna de acciones.
+* Se abrirá una nueva página con toda la información del recibo seleccionado.
+
+<img alt="Pantalla de dashboard" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/dashboard.PNG?raw=true">
+
+5. Cerrar sesión
+Para cerrar sesión de forma segura:
+* Haga click en el botón "Cerrar Sesión" ubicado en la parte inferior del menú lateral.
+* Confirme la acción cuando se le solicite.
+* Será redirigido a la pantalla de incio de sesión
