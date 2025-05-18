@@ -62,4 +62,14 @@ POST /api/auth/login - Autenticación
 GET /api/recibos - Lista de recibos
 GET /api/recibos/:id - Detalle de un recibo
 
+
+1. **Instalación
 Desarrollado con ❤️ para MicroeDoc
+
+# Manual de Usuario
+
+1. **Acceso al sistema**
+* Abra su navegador web y acceda a la dirección proporcionada por su administrador.
+* Se mostrará la pantalla de inicio de sesión.
+* Ingrese sus credenciales (usuario y contraseña)
+
