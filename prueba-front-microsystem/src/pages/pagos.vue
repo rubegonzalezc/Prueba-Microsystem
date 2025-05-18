@@ -124,8 +124,8 @@
         
         <v-divider class="mt-3"></v-divider>
       </div>
-      
-      <!-- Tabla mejorada -->
+
+      <!-- Tabla de recibos -->
       <v-data-table
         :headers="headers"
         :items="recibosVisiblesFiltrados"
@@ -351,8 +351,6 @@ onMounted(async () => {
 .table-toolbar {
   background-color: white;
 }
-
-/* Estilos mejorados para el campo de búsqueda */
 .search-field {
   transition: all 0.3s ease;
   margin-bottom: 8px;

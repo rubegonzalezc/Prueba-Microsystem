@@ -17,13 +17,8 @@ export const authService = {
         username,
         password,
       });
-
-      // Ver la estructura completa de la respuesta
       console.log('Respuesta completa del servidor:', JSON.stringify(response.data, null, 2));
-
-      // Modificación aquí: usar datos en lugar de data
       if (response.data.datos && response.data.datos.token) {
-        // Guardar token en localStorage y agregar console.log para depuración
         localStorage.setItem('auth-token', response.data.datos.token);
         localStorage.setItem('user-info', JSON.stringify(response.data.datos.usuario));
         console.log('Token guardado:', response.data.datos.token.substring(0, 20) + '...');
@@ -34,7 +29,6 @@ export const authService = {
       return response.data;
     } catch (error) {
       console.error('Error en login:', error);
-      // Propagar el error para manejarlo en el componente
       throw error?.response?.data || { error: 'Error de conexión', message: 'No se pudo conectar con el servidor' };
     }
   },
@@ -70,7 +64,7 @@ export const authService = {
   
   /**
    * Obtiene el token de autenticación almacenado
-   * @returns {string|null} - Token de autenticación o null
+   * @returns {string|null} - 
    */
   getToken () {
     return localStorage.getItem('auth-token');
