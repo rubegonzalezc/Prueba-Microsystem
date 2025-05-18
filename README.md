@@ -63,7 +63,6 @@ GET /api/recibos - Lista de recibos
 GET /api/recibos/:id - Detalle de un recibo
 
 
-1. **Instalación
 Desarrollado con ❤️ para MicroeDoc
 
 # Manual de Usuario
@@ -72,4 +71,12 @@ Desarrollado con ❤️ para MicroeDoc
 * Abra su navegador web y acceda a la dirección proporcionada por su administrador.
 * Se mostrará la pantalla de inicio de sesión.
 * Ingrese sus credenciales (usuario y contraseña)
+
+<img alt="Pantalla de login" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/inicio-sesion.PNG?raw=true">
+
+2. **Dashbaord principal**
+Una vez autenticado, accederá al Dashboard principal que muestra:
+* Resumen de recibos
+* Últimos recibos
+* Accesos rápidos
 
