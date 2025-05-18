@@ -103,7 +103,7 @@ Para consultar sus recibos de pago:
 * Se mostrará una tabla con todos sus recibos, ordenados del más reciente al más antiguo.
 * La tabla incluye información básica: Número de recibo, fecha de pago, período, monto líquido.
 
-<img alt="Pantalla de dashboard" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/dashboard.PNG?raw=true">
+<img alt="Pantalla de pagos" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/recibo-pagos.PNG?raw=true">
 
 
 4. Visualizaciíon de detalles
@@ -111,7 +111,7 @@ Para ver el detalle completo de un recibo:
 * En la lista de recibos, haga click en el icono de "ojo" en la columna de acciones.
 * Se abrirá una nueva página con toda la información del recibo seleccionado.
 
-<img alt="Pantalla de dashboard" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/dashboard.PNG?raw=true">
+<img alt="Pantalla de dashboard" src="https://github.com/rubegonzalezc/Prueba-Microsystem/blob/main/manual-usuario/detalle-pagos.PNG?raw=true">
 
 5. Cerrar sesión
 Para cerrar sesión de forma segura:
