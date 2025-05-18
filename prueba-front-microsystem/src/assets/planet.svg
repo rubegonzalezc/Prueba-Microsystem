@@ -1,0 +1,21 @@
+<svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Planeta principal -->
+  <circle cx="140" cy="140" r="100" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  
+  <!-- Detalles del planeta -->
+  <path d="M70 100 Q100 70, 120 80 T160 100 T200 120 T180 160 T140 180 T100 170 T70 140 T50 110 Z" 
+        fill="#BBDEFB" stroke="none"/>
+  <path d="M100 200 Q120 180, 150 190 T190 200 T210 180 T200 160 T170 150 Z" 
+        fill="#BBDEFB" stroke="none"/>
+  
+  <!-- Anillos -->
+  <ellipse cx="140" cy="140" rx="150" ry="40" 
+           fill="transparent" stroke="#90CAF9" stroke-width="2"/>
+  <ellipse cx="140" cy="140" rx="130" ry="35" 
+           fill="transparent" stroke="#64B5F6" stroke-width="1"/>
+  
+  <!-- Cráteres -->
+  <circle cx="180" cy="110" r="15" fill="#BBDEFB"/>
+  <circle cx="100" cy="150" r="10" fill="#BBDEFB"/>
+  <circle cx="160" cy="180" r="12" fill="#BBDEFB"/>
+</svg>

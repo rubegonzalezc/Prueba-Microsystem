@@ -1,0 +1,15 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#1976D2" stroke-width="2">
+    <!-- Cuerpo del astronauta -->
+    <ellipse cx="60" cy="65" rx="30" ry="35" fill="#fff"/>
+    <!-- Casco -->
+    <circle cx="60" cy="40" r="25" fill="#fff"/>
+    <!-- Visor -->
+    <ellipse cx="60" cy="40" rx="18" ry="15" fill="#E3F2FD"/>
+    <!-- Mangueras -->
+    <path d="M45 70 C20 80, 30 95, 45 90" fill="transparent"/>
+    <path d="M75 70 C100 80, 90 95, 75 90" fill="transparent"/>
+    <!-- Tanque -->
+    <rect x="50" y="70" width="20" height="30" rx="5" fill="#90CAF9"/>
+  </g>
+</svg>

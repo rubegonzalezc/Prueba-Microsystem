@@ -14,6 +14,7 @@ import Dashboard from '@/pages/dashboard.vue'
 import Pagos from '@/pages/pagos.vue'
 import DetallePago from '@/pages/pagos/[id].vue'
 import Login from '@/pages/login.vue'
+import NotFound from '@/pages/404.vue'
 
 // Definir rutas de manera simple y directa
 const routes = [
@@ -51,6 +52,13 @@ const routes = [
       },
     ]
   },
+  
+  // Ruta para 404 - debe estar al final
+  {
+    path: '/:pathMatch(.*)*',
+    component: NotFound,
+    name: 'NotFound'
+  }
 ]
 
 // Crear router con configuración simple
